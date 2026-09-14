@@ -44,30 +44,26 @@
 	</style>
 </head>
 
-<body class="bg-[#1a1a32] text-slate-100 font-sans antialiased overflow-x-hidden relative selection:bg-[#ac8754] selection:text-[#1a1a32]">
+<body
+	class="bg-[#1a1a32] text-slate-100 font-sans antialiased overflow-x-hidden relative selection:bg-[#ac8754] selection:text-[#1a1a32]">
 
 	<!-- Pontos de Iluminação Suave Global (Radial Glows de Fundo) -->
 	<div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
-		<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#ac8754]/10 blur-[160px] rounded-full"></div>
+		<div
+			class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#ac8754]/10 blur-[160px] rounded-full">
+		</div>
 		<div class="absolute top-[35%] -right-40 w-[600px] h-[600px] bg-[#ac8754]/5 blur-[160px] rounded-full"></div>
 		<div class="absolute top-[70%] -left-40 w-[600px] h-[600px] bg-[#ac8754]/5 blur-[160px] rounded-full"></div>
 	</div>
 
 	<!-- Header / Navbar -->
-	<header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#1a1a32]/80 backdrop-blur-xl transition-all duration-300">
+	<header
+		class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#1a1a32]/80 backdrop-blur-xl transition-all duration-300">
 		<div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
-			<a href="#inicio" class="group flex items-center gap-3.5" aria-label="Maida Advocacia - início">
-				<span
-					class="flex size-10 items-center justify-center rounded-full bg-[#ac8754]/15 border border-[#ac8754]/30 text-[#ac8754] shadow-sm shadow-[#ac8754]/10 transition-transform duration-300 group-hover:scale-105">
-					<svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="M12 3v18m-9-6h18M5 9l7-6 7 6M5 15l7 6 7-6" />
-					</svg>
-				</span>
-				<span>
-					<span class="block font-serif text-xl font-semibold leading-none tracking-tight text-white group-hover:text-[#e8d5b5] transition-colors">Maida</span>
-					<span class="mt-1 block font-mono text-[9px] uppercase tracking-[0.28em] text-[#ac8754]">Advocacia</span>
-				</span>
+			<a href="#inicio" class="flex items-center transition-opacity hover:opacity-90"
+				aria-label="Maida Advocacia - início">
+				<img src="../assets/images/logo-maida-sem-fundo.png" alt="Maida Advocacia"
+					class="h-16 lg:h-[72px] w-auto object-contain py-1" />
 			</a>
 			<nav class="hidden items-center gap-8 text-sm text-slate-300/80 lg:flex">
 				<a href="#atuacao" class="transition-colors hover:text-[#ac8754]">Áreas de atuação</a>
@@ -86,7 +82,8 @@
 					Atendimento rápido
 				</a>
 			</div>
-			<button id="menu-toggle" class="rounded-md p-2 text-white/80 hover:text-white transition-colors lg:hidden" aria-label="Abrir menu">
+			<button id="menu-toggle" class="rounded-md p-2 text-white/80 hover:text-white transition-colors lg:hidden"
+				aria-label="Abrir menu">
 				<svg id="menu-icon-open" class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
 				</svg>
@@ -95,11 +92,15 @@
 				</svg>
 			</button>
 		</div>
-		<nav id="mobile-menu" class="hidden border-t border-white/10 bg-[#141428]/95 backdrop-blur-xl px-5 py-6 lg:hidden shadow-2xl">
+		<nav id="mobile-menu"
+			class="hidden border-t border-white/10 bg-[#141428]/95 backdrop-blur-xl px-5 py-6 lg:hidden shadow-2xl">
 			<div class="flex flex-col gap-5 text-sm">
-				<a href="#atuacao" class="mobile-link text-slate-200 transition-colors hover:text-[#ac8754]">Áreas de atuação</a>
-				<a href="#escritorio" class="mobile-link text-slate-200 transition-colors hover:text-[#ac8754]">O escritório</a>
-				<a href="#como-funciona" class="mobile-link text-slate-200 transition-colors hover:text-[#ac8754]">Como funciona</a>
+				<a href="#atuacao" class="mobile-link text-slate-200 transition-colors hover:text-[#ac8754]">Áreas de
+					atuação</a>
+				<a href="#escritorio" class="mobile-link text-slate-200 transition-colors hover:text-[#ac8754]">O
+					escritório</a>
+				<a href="#como-funciona" class="mobile-link text-slate-200 transition-colors hover:text-[#ac8754]">Como
+					funciona</a>
 				<a href="#duvidas" class="mobile-link text-slate-200 transition-colors hover:text-[#ac8754]">Dúvidas</a>
 				<a href="https://wa.me/5548988519275?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20benef%C3%ADcio%20previdenci%C3%A1rio."
 					target="_blank" rel="noreferrer"
@@ -117,20 +118,26 @@
 	<!-- Hero Section -->
 	<section id="inicio" class="relative pt-28 text-white lg:pt-36 overflow-hidden">
 		<!-- Iluminação Radial Hero -->
-		<div class="absolute top-10 left-1/4 -translate-x-1/2 w-[600px] h-[500px] bg-[#ac8754]/12 blur-[140px] rounded-full pointer-events-none -z-10"></div>
-		<div class="absolute top-1/4 right-5 w-[500px] h-[500px] bg-[#ac8754]/15 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+		<div
+			class="hidden lg:block absolute top-10 left-1/4 -translate-x-1/2 w-[600px] h-[500px] bg-[#ac8754]/12 blur-[140px] rounded-full pointer-events-none -z-10">
+		</div>
+		<div
+			class="hidden lg:blockabsolute top-1/4 right-5 w-[500px] h-[500px] bg-[#ac8754]/15 blur-[130px] rounded-full pointer-events-none -z-10">
+		</div>
 
 		<div
 			class="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-24">
-			<div class="max-w-2xl">
+			<div class="max-w-2xl flex flex-col items-center text-center lg:items-start lg:text-left mx-auto lg:mx-0">
 				<div
 					class="mb-7 inline-flex items-center gap-2.5 rounded-full border border-[#ac8754]/30 bg-white/[0.04] px-4 py-2 text-xs text-[#e8d5b5] backdrop-blur-md shadow-sm">
 					<span class="size-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]"></span>
-					<span class="font-mono text-[10px] uppercase tracking-[0.25em]">Atendimento presencial em Florianópolis e Online</span>
+					<span class="font-mono text-[10px] uppercase tracking-[0.25em]">Atendimento presencial em
+						Florianópolis e Online</span>
 				</div>
 				<h1 class="font-serif text-5xl leading-[1.06] tracking-tight sm:text-6xl lg:text-7xl text-balance">
 					O benefício que você merece
-					<span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] via-[#f5e6d0] to-[#8e6c3e]">
+					<span
+						class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] via-[#f5e6d0] to-[#8e6c3e]">
 						começa com uma boa orientação.
 					</span>
 				</h1>
@@ -138,7 +145,8 @@
 					Advocacia previdenciária com escuta, estratégia e a experiência de quem entende que cada história
 					importa.
 				</p>
-				<div class="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+				<div
+					class="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center w-full sm:w-auto justify-center lg:justify-start">
 					<a href="https://wa.me/5548988519275?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20benef%C3%ADcio%20previdenci%C3%A1rio."
 						target="_blank" rel="noreferrer"
 						class="inline-flex items-center justify-center gap-3 rounded-full bg-[#ac8754] px-7 py-3.5 text-sm font-semibold text-[#1a1a32] shadow-xl shadow-[#ac8754]/20 ring-1 ring-white/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#8e6c3e] hover:text-white hover:shadow-2xl hover:shadow-[#ac8754]/30">
@@ -157,75 +165,83 @@
 						</svg>
 					</a>
 				</div>
-				<div class="mt-12 flex items-center gap-4 border-t border-white/10 pt-6">
+				<div
+					class="mt-12 flex items-center justify-center lg:justify-start gap-4 border-t border-white/10 pt-6 w-full">
 					<div class="flex -space-x-2">
 						<span
 							class="flex size-9 items-center justify-center rounded-full border border-white/20 bg-[#ac8754] text-xs font-bold text-[#1a1a32] shadow-md">KM</span>
 						<span
 							class="flex size-9 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xs font-medium text-white backdrop-blur-sm">60</span>
 					</div>
-					<p class="text-xs leading-5 text-slate-400">
+					<p class="text-xs leading-5 text-slate-400 text-left">
 						<strong class="font-semibold text-slate-200">Mais de 60 anos de tradição</strong><br />
 						Cuidado jurídico que atravessa gerações.
 					</p>
 				</div>
 			</div>
 
-			<!-- Foto com Iluminação & Molduras Refinadas -->
-			<div class="relative mx-auto w-full max-w-md lg:ml-auto">
-				<!-- Ponto de luz radial dourada atrás da foto -->
-				<div class="absolute -inset-6 rounded-[3rem] bg-[#ac8754]/25 blur-2xl opacity-70 pointer-events-none"></div>
-				<!-- Micro-bordas concêntricas de luxo -->
-				<div class="absolute -inset-4 rounded-[2rem] border border-[#ac8754]/30 pointer-events-none"></div>
-				<div class="absolute -inset-8 rounded-[2.5rem] border border-white/5 pointer-events-none"></div>
-
-				<div class="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/15 bg-white/[0.03] shadow-2xl backdrop-blur-sm">
-					<!-- Base monograma executivo elegante sempre pronta -->
-					<div class="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[#252549] via-[#1a1a32] to-[#121224] text-center p-8 pb-20">
-						<div class="mb-4 flex size-28 items-center justify-center rounded-full border border-[#ac8754]/40 bg-[#ac8754]/15 font-serif text-4xl font-medium text-[#ac8754] shadow-2xl shadow-[#ac8754]/25">
-							KM
-						</div>
-						<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Advocacia Especializada</p>
-					</div>
-
-					<!-- Imagem real: exibe sobreposta quando o arquivo estiver no diretório -->
-					<img src="../assets/images/dra-karen.webp" alt=""
-						onload="this.classList.remove('opacity-0');"
-						onerror="this.remove();"
-						class="relative z-10 h-full w-full object-cover object-top opacity-0 transition-opacity duration-500 filter brightness-[1.02] contrast-[1.02]" />
-
-					<div class="absolute inset-0 z-20 bg-gradient-to-t from-[#1a1a32] via-[#1a1a32]/20 to-transparent pointer-events-none"></div>
-					<div class="absolute bottom-0 left-0 right-0 z-30 p-6 bg-gradient-to-t from-[#121224] via-[#121224]/80 to-transparent">
-						<p class="font-serif text-2xl text-white tracking-wide">Dra. Karen Dias Lanfranca Maida</p>
-						<p class="mt-1 font-mono text-[11px] tracking-wider text-[#ac8754]">OAB/SC 77.387A · OAB/SP 173.891</p>
-					</div>
-				</div>
+			<!-- Foto Dra. Karen - Efeito Out-of-Bounds sem fundo -->
+			<div class="relative hidden lg:flex items-end justify-center self-end min-h-[500px] xl:min-h-[560px]">
+				<!-- Camada 0: Iluminação Radial -->
 				<div
-					class="absolute -bottom-5 -left-5 hidden rounded-xl border border-white/15 bg-[#1a1a32]/85 px-4 py-3 shadow-xl backdrop-blur-md sm:block">
+					class="absolute bottom-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#ac8754]/25 blur-[130px] rounded-full pointer-events-none z-0">
+				</div>
+
+				<!-- Camada 1: IMAGEM COM SHADOW (Atrás do crachá) -->
+				<img src="../assets/images/apontando_sem_fundo1.png" alt="" aria-hidden="true"
+					class="absolute bottom-0 left-1/2 -translate-x-1/2 z-0 h-full max-h-[540px] xl:max-h-[600px] w-auto object-contain object-bottom -scale-x-100 origin-bottom drop-shadow-[0_25px_50px_rgba(0,0,0,0.65)] pointer-events-none" />
+
+				<!-- Camada 2: Badge de Atuação Nacional -->
+				<div
+					class="absolute top-0 -left-[100px] z-10 rounded-xl border border-white/15 bg-[#1a1a32]/90 px-4 py-3 shadow-2xl backdrop-blur-md">
 					<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Atuação nacional</p>
 					<p class="mt-1 text-sm font-medium text-slate-200">Do seu lado, onde você estiver.</p>
 				</div>
+
+				<!-- Camada 2: Identificação Dra. Karen (Mesa) -->
+				<div
+					class="absolute bottom-10 xl:-bottom-[3.2rem] right-12 xl:right-24 z-10 rounded-xl border border-white/15 bg-[#1a1a32]/90 px-5 py-3 shadow-2xl backdrop-blur-md">
+					<p class="font-serif text-sm font-medium text-white">Dra. Karen Dias Lanfranca Maida</p>
+					<p class="mt-1 font-mono text-[9px] tracking-wider text-[#ac8754]">OAB/SC 77.387A · OAB/SP 173.891
+					</p>
+				</div>
+
+				<!-- Camada 3: IMAGEM SEM SHADOW (Na frente do crachá, repousando perfeitamente) -->
+				<img src="../assets/images/apontando_sem_fundo1.png" alt="Dra. Karen Dias Lanfranca Maida"
+					class="relative z-20 h-full max-h-[540px] xl:max-h-[600px] w-auto object-contain object-bottom -scale-x-100 origin-bottom pointer-events-none" />
 			</div>
 		</div>
 
 		<!-- Faixa de Estatísticas Editorial -->
 		<div class="border-t border-white/10 bg-[#15152a]/60 backdrop-blur-sm">
-			<div class="mx-auto grid max-w-7xl grid-cols-2 px-5 lg:grid-cols-4 lg:px-8 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
+			<div
+				class="mx-auto grid max-w-7xl grid-cols-2 px-5 lg:grid-cols-4 lg:px-8 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
 				<div class="px-4 py-8 first:pl-0">
-					<p class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">60+</p>
-					<p class="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Anos de tradição</p>
+					<p
+						class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">
+						60+</p>
+					<p class="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Anos de tradição
+					</p>
 				</div>
 				<div class="px-4 py-8 lg:pl-8">
-					<p class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">25+</p>
-					<p class="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Anos no previdenciário</p>
+					<p
+						class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">
+						25+</p>
+					<p class="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Anos no
+						previdenciário</p>
 				</div>
 				<div class="px-4 py-8 lg:pl-8">
-					<p class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">SC · SP</p>
+					<p
+						class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">
+						SC · SP</p>
 					<p class="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Inscrições OAB</p>
 				</div>
 				<div class="px-4 py-8 lg:pl-8">
-					<p class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">Brasil</p>
-					<p class="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Atendimento nacional</p>
+					<p
+						class="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] to-[#f3e5cb]">
+						Brasil</p>
+					<p class="mt-2 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Atendimento
+						nacional</p>
 				</div>
 			</div>
 		</div>
@@ -234,18 +250,24 @@
 	<!-- Áreas de Atuação (Glassmorphism & Micro-bordas) -->
 	<section id="atuacao" class="relative bg-[#15152a] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Iluminação Radial Dourada na Seção -->
-		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#ac8754]/6 blur-[160px] rounded-full pointer-events-none -z-10"></div>
+		<div
+			class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#ac8754]/6 blur-[160px] rounded-full pointer-events-none -z-10">
+		</div>
 
 		<div class="mx-auto max-w-7xl px-5 lg:px-8">
 			<div class="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
 				<div>
-					<p class="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Nossa especialidade</p>
+					<p class="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Nossa especialidade
+					</p>
 					<h2 class="max-w-xl font-serif text-4xl leading-tight text-white sm:text-5xl">
-						Clareza para <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] via-amber-100 to-[#8e6c3e]">decisões que mudam vidas.</span>
+						Clareza para <span
+							class="text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] via-amber-100 to-[#8e6c3e]">decisões
+							que mudam vidas.</span>
 					</h2>
 				</div>
 				<p class="max-w-sm text-sm leading-relaxed text-slate-300/70">
-					O Direito Previdenciário não precisa ser complicado. Nossa missão é traduzir possibilidades em caminhos seguros.
+					O Direito Previdenciário não precisa ser complicado. Nossa missão é traduzir possibilidades em
+					caminhos seguros.
 				</p>
 			</div>
 
@@ -255,7 +277,8 @@
 					class="group relative flex min-h-[320px] flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/50 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
 					<div>
 						<div class="mb-8 flex items-center justify-between">
-							<span class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
+							<span
+								class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
 								<svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 										d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -267,15 +290,23 @@
 									d="M14 5l7 7m0 0l-7 7m7-7H3" />
 							</svg>
 						</div>
-						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Aposentadorias</h3>
+						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">
+							Aposentadorias</h3>
 						<p class="mt-3 max-w-md text-sm leading-relaxed text-slate-300/70">
-							Idade, tempo de contribuição e especial. Cuidamos do seu pedido do início ao fim com análise detalhada de vínculos.
+							Idade, tempo de contribuição e especial. Cuidamos do seu pedido do início ao fim com análise
+							detalhada de vínculos.
 						</p>
 					</div>
 					<div class="mt-8 flex flex-wrap gap-2">
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Aposentadoria por idade</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Tempo de contribuição</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Atividade especial</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Aposentadoria
+							por idade</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Tempo
+							de contribuição</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Atividade
+							especial</span>
 					</div>
 				</article>
 
@@ -284,7 +315,8 @@
 					class="group relative flex min-h-[320px] flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/50 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
 					<div>
 						<div class="mb-8 flex items-center justify-between">
-							<span class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
+							<span
+								class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
 								<svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 										d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -296,15 +328,23 @@
 									d="M14 5l7 7m0 0l-7 7m7-7H3" />
 							</svg>
 						</div>
-						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">BPC / LOAS</h3>
+						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">BPC /
+							LOAS</h3>
 						<p class="mt-3 max-w-md text-sm leading-relaxed text-slate-300/70">
-							Orientação completa para idosos e pessoas com deficiência que precisam acessar o benefício assistencial de um salário mínimo.
+							Orientação completa para idosos e pessoas com deficiência que precisam acessar o benefício
+							assistencial de um salário mínimo.
 						</p>
 					</div>
 					<div class="mt-8 flex flex-wrap gap-2">
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Baixa renda</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Pessoa com deficiência</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Benefício assistencial</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Baixa
+							renda</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Pessoa
+							com deficiência</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Benefício
+							assistencial</span>
 					</div>
 				</article>
 
@@ -313,7 +353,8 @@
 					class="group relative flex min-h-[320px] flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/50 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
 					<div>
 						<div class="mb-8 flex items-center justify-between">
-							<span class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
+							<span
+								class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
 								<svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 										d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -325,15 +366,23 @@
 									d="M14 5l7 7m0 0l-7 7m7-7H3" />
 							</svg>
 						</div>
-						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Benefícios por Incapacidade</h3>
+						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">
+							Benefícios por Incapacidade</h3>
 						<p class="mt-3 max-w-md text-sm leading-relaxed text-slate-300/70">
-							Atuação estratégica em casos de auxílio-doença, aposentadoria por invalidez e reversão de perícias médicas negadas.
+							Atuação estratégica em casos de auxílio-doença, aposentadoria por invalidez e reversão de
+							perícias médicas negadas.
 						</p>
 					</div>
 					<div class="mt-8 flex flex-wrap gap-2">
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Auxílio por incapacidade</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Perícia médica</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Recurso administrativo</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Auxílio
+							por incapacidade</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Perícia
+							médica</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Recurso
+							administrativo</span>
 					</div>
 				</article>
 
@@ -342,7 +391,8 @@
 					class="group relative flex min-h-[320px] flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/50 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
 					<div>
 						<div class="mb-8 flex items-center justify-between">
-							<span class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
+							<span
+								class="flex size-12 items-center justify-center rounded-xl bg-[#ac8754]/10 border border-[#ac8754]/25 text-[#ac8754] group-hover:bg-[#ac8754] group-hover:text-[#1a1a32] transition-colors duration-300">
 								<svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 										d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -354,15 +404,22 @@
 									d="M14 5l7 7m0 0l-7 7m7-7H3" />
 							</svg>
 						</div>
-						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Planejamento & Revisões</h3>
+						<h3 class="font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">
+							Planejamento & Revisões</h3>
 						<p class="mt-3 max-w-md text-sm leading-relaxed text-slate-300/70">
-							Análise do extrato CNIS para corrigir erros do INSS, planejar a melhor aposentadoria e recuperar valores pagos a menor.
+							Análise do extrato CNIS para corrigir erros do INSS, planejar a melhor aposentadoria e
+							recuperar valores pagos a menor.
 						</p>
 					</div>
 					<div class="mt-8 flex flex-wrap gap-2">
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Análise do CNIS</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Planejamento</span>
-						<span class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Revisão de benefício</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Análise
+							do CNIS</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Planejamento</span>
+						<span
+							class="rounded-full bg-white/[0.04] border border-white/10 px-3 py-1.5 font-mono text-[10px] tracking-wide text-slate-300 group-hover:border-[#ac8754]/30 transition-colors">Revisão
+							de benefício</span>
 					</div>
 				</article>
 			</div>
@@ -372,46 +429,56 @@
 	<!-- O Escritório / Legado -->
 	<section id="escritorio" class="relative bg-[#1a1a32] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Ponto de luz radial dourada -->
-		<div class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ac8754]/8 blur-[160px] rounded-full pointer-events-none -z-10"></div>
+		<div
+			class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ac8754]/8 blur-[160px] rounded-full pointer-events-none -z-10">
+		</div>
 
-		<div class="mx-auto grid max-w-7xl gap-16 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:px-8">
-			<div class="relative">
-				<div class="relative aspect-square max-w-sm rounded-2xl border border-[#ac8754]/30 bg-white/[0.03] p-8 backdrop-blur-md shadow-2xl overflow-hidden">
-					<!-- Brilho interno -->
-					<div class="absolute -top-12 -right-12 size-48 rounded-full bg-[#ac8754]/15 blur-3xl pointer-events-none"></div>
-
-					<div class="flex h-full flex-col justify-between border border-white/10 p-6 relative">
-						<svg class="size-9 text-[#ac8754]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-						</svg>
-						<div>
-							<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Desde</p>
-							<p class="mt-1 font-serif text-6xl text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-[#ac8754]">1962</p>
-							<p class="mt-4 max-w-[180px] text-sm leading-relaxed text-slate-300/70">Uma história construída com ética e presença.</p>
-						</div>
-						<p class="font-serif text-lg italic text-[#e8d5b5]">“A justiça começa quando alguém se sente ouvido.”</p>
-					</div>
+		<div class="mx-auto grid max-w-7xl items-end gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+			<!-- Coluna Dra. Karen - Foto Poderosa Ancorada na Base -->
+			<div class="relative hidden lg:flex items-end justify-center self-end min-h-[460px]">
+				<!-- Ponto de luz radial dourada suave atrás da imagem -->
+				<div
+					class="absolute bottom-6 left-1/2 -translate-x-1/2 w-[420px] h-[420px] bg-[#ac8754]/20 blur-[130px] rounded-full pointer-events-none">
 				</div>
-				<div class="absolute -bottom-6 -right-2 rounded-xl bg-[#ac8754] px-6 py-4 text-[#1a1a32] shadow-xl shadow-[#ac8754]/25 ring-1 ring-white/20">
-					<p class="font-serif text-2xl font-bold">+60</p>
-					<p class="font-mono text-[10px] uppercase tracking-[0.2em] font-medium">anos de legado</p>
+
+				<!-- Imagem com braços cruzados ancorada na base -->
+				<div class="relative z-10 flex items-end justify-center w-full">
+					<img src="../assets/images/poderosa_sem_fundo1.png"
+						alt="Dra. Karen Dias Lanfranca Maida - Advocacia Previdenciária"
+						class="h-[460px] w-auto object-contain object-bottom drop-shadow-[0_25px_45px_rgba(0,0,0,0.65)]" />
+
+					<!-- Selo +60 Anos de Legado posicionado com elegância -->
+					<div
+						class="absolute -bottom-4 right-2 z-20 rounded-2xl bg-[#ac8754] px-6 py-4 text-[#1a1a32] shadow-2xl shadow-[#ac8754]/30 ring-1 ring-white/20">
+						<p class="font-serif text-3xl font-bold leading-none">+60</p>
+						<p class="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] font-semibold">anos de legado
+						</p>
+					</div>
+
+					<!-- Badge institucional Desde 1962 flutuante -->
+					<div
+						class="absolute -top-5 left-0 z-20 max-w-[210px] rounded-2xl border border-white/15 bg-[#1a1a32]/85 p-4 shadow-2xl backdrop-blur-md">
+						<p class="font-mono text-[9px] uppercase tracking-[0.25em] text-[#ac8754]">Desde 1962</p>
+						<p class="mt-1 font-serif text-xs italic text-slate-200 leading-snug">"A justiça começa quando
+							alguém se sente ouvido."</p>
+					</div>
 				</div>
 			</div>
 
-			<div>
+			<div class="flex flex-col items-center text-center lg:items-start lg:text-left">
 				<p class="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">O escritório</p>
 				<h2 class="max-w-xl font-serif text-4xl leading-tight text-white sm:text-5xl">
 					Experiência para acolher. Estratégia para resolver.
 				</h2>
 				<p class="mt-6 max-w-xl text-base leading-relaxed text-slate-300/80">
 					A Maida Advocacia nasceu de uma tradição fundada em 1962 e se especializou em cuidar de pessoas em
-					momentos decisivos. Sob a condução técnica da Dra. Karen Dias Lanfranca Maida (advogada
+					momentos decisivos. Sob a condução jurídica da Dra. Karen Dias Lanfranca Maida (advogada
 					previdenciarista há 25 anos), unimos conhecimento profundo, atendimento humanizado e soluções
 					modernas.
 				</p>
-				<div class="mt-8 grid gap-4 sm:grid-cols-2">
-					<div class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
+				<div class="mt-8 grid gap-4 sm:grid-cols-2 w-full text-left">
+					<div
+						class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
 						<span
 							class="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#ac8754]/15 border border-[#ac8754]/30 text-[#ac8754]">
 							<svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -421,7 +488,8 @@
 						</span>
 						Atendimento personalizado
 					</div>
-					<div class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
+					<div
+						class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
 						<span
 							class="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#ac8754]/15 border border-[#ac8754]/30 text-[#ac8754]">
 							<svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -431,7 +499,8 @@
 						</span>
 						Comunicação transparente
 					</div>
-					<div class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
+					<div
+						class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
 						<span
 							class="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#ac8754]/15 border border-[#ac8754]/30 text-[#ac8754]">
 							<svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -441,7 +510,8 @@
 						</span>
 						Análise técnica cuidadosa
 					</div>
-					<div class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
+					<div
+						class="flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-200 backdrop-blur-sm hover:border-[#ac8754]/40 hover:bg-white/[0.05] transition-all">
 						<span
 							class="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#ac8754]/15 border border-[#ac8754]/30 text-[#ac8754]">
 							<svg class="size-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -468,57 +538,75 @@
 	<!-- Como Funciona (Painéis de Vidro Dark) -->
 	<section id="como-funciona" class="relative bg-[#15152a] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Ponto de luz radial -->
-		<div class="absolute top-1/3 right-1/4 w-[600px] h-[500px] bg-[#ac8754]/6 blur-[160px] rounded-full pointer-events-none -z-10"></div>
+		<div
+			class="absolute top-1/3 right-1/4 w-[600px] h-[500px] bg-[#ac8754]/6 blur-[160px] rounded-full pointer-events-none -z-10">
+		</div>
 
 		<div class="mx-auto max-w-7xl px-5 lg:px-8">
 			<div class="mx-auto max-w-2xl text-center">
 				<p class="mb-4 font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Seu próximo passo</p>
 				<h2 class="font-serif text-4xl text-white sm:text-5xl">Simples, claro e ao seu lado.</h2>
-				<p class="mt-5 text-slate-300/70 leading-relaxed">Você não precisa enfrentar o INSS sozinho. Veja como é simples começar.</p>
+				<p class="mt-5 text-slate-300/70 leading-relaxed">Você não precisa enfrentar o INSS sozinho. Veja como é
+					simples começar.</p>
 			</div>
 			<div class="mt-16 grid gap-8 md:grid-cols-3">
 				<!-- Passo 1 -->
-				<div class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/40 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
+				<div
+					class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/40 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
 					<div class="flex items-center justify-between">
-						<span class="inline-flex rounded-full border border-[#ac8754]/30 bg-[#ac8754]/10 px-3 py-1 font-mono text-xs font-semibold text-[#ac8754] tracking-widest">01</span>
-						<svg class="size-5 text-white/30 group-hover:text-[#ac8754] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<span
+							class="inline-flex rounded-full border border-[#ac8754]/30 bg-[#ac8754]/10 px-3 py-1 font-mono text-xs font-semibold text-[#ac8754] tracking-widest">01</span>
+						<svg class="size-5 text-white/30 group-hover:text-[#ac8754] transition-colors" fill="none"
+							stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
 						</svg>
 					</div>
-					<h3 class="mt-8 font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Conversa inicial</h3>
+					<h3 class="mt-8 font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">
+						Conversa inicial</h3>
 					<p class="mt-3 text-sm leading-relaxed text-slate-300/70">
-						Conte sua história pelo WhatsApp. Vamos ouvir e entender com carinho o momento que você está vivendo.
+						Conte sua história pelo WhatsApp. Vamos ouvir e entender com carinho o momento que você está
+						vivendo.
 					</p>
 				</div>
 
 				<!-- Passo 2 -->
-				<div class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/40 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
+				<div
+					class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/40 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
 					<div class="flex items-center justify-between">
-						<span class="inline-flex rounded-full border border-[#ac8754]/30 bg-[#ac8754]/10 px-3 py-1 font-mono text-xs font-semibold text-[#ac8754] tracking-widest">02</span>
-						<svg class="size-5 text-white/30 group-hover:text-[#ac8754] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<span
+							class="inline-flex rounded-full border border-[#ac8754]/30 bg-[#ac8754]/10 px-3 py-1 font-mono text-xs font-semibold text-[#ac8754] tracking-widest">02</span>
+						<svg class="size-5 text-white/30 group-hover:text-[#ac8754] transition-colors" fill="none"
+							stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 						</svg>
 					</div>
-					<h3 class="mt-8 font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Análise cuidadosa</h3>
+					<h3 class="mt-8 font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Análise
+						cuidadosa</h3>
 					<p class="mt-3 text-sm leading-relaxed text-slate-300/70">
-						Avaliamos seus documentos, carteira de trabalho, extrato CNIS e todas as possibilidades legais para o seu caso.
+						Avaliamos seus documentos, carteira de trabalho, extrato CNIS e todas as possibilidades legais
+						para o seu caso.
 					</p>
 				</div>
 
 				<!-- Passo 3 -->
-				<div class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/40 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
+				<div
+					class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-[#ac8754]/40 hover:shadow-2xl hover:shadow-[#ac8754]/10 hover:bg-white/[0.05]">
 					<div class="flex items-center justify-between">
-						<span class="inline-flex rounded-full border border-[#ac8754]/30 bg-[#ac8754]/10 px-3 py-1 font-mono text-xs font-semibold text-[#ac8754] tracking-widest">03</span>
-						<svg class="size-5 text-white/30 group-hover:text-[#ac8754] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<span
+							class="inline-flex rounded-full border border-[#ac8754]/30 bg-[#ac8754]/10 px-3 py-1 font-mono text-xs font-semibold text-[#ac8754] tracking-widest">03</span>
+						<svg class="size-5 text-white/30 group-hover:text-[#ac8754] transition-colors" fill="none"
+							stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
 						</svg>
 					</div>
-					<h3 class="mt-8 font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Caminho seguro</h3>
+					<h3 class="mt-8 font-serif text-2xl text-white group-hover:text-[#e8d5b5] transition-colors">Caminho
+						seguro</h3>
 					<p class="mt-3 text-sm leading-relaxed text-slate-300/70">
-						Você recebe uma orientação clara e uma estratégia jurídica sólida feita sob medida para a sua realidade.
+						Você recebe uma orientação clara e uma estratégia jurídica sólida feita sob medida para a sua
+						realidade.
 					</p>
 				</div>
 			</div>
@@ -528,7 +616,9 @@
 	<!-- FAQ Accordion -->
 	<section id="duvidas" class="relative bg-[#1a1a32] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Ponto de luz radial -->
-		<div class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ac8754]/7 blur-[150px] rounded-full pointer-events-none -z-10"></div>
+		<div
+			class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ac8754]/7 blur-[150px] rounded-full pointer-events-none -z-10">
+		</div>
 
 		<div class="mx-auto grid max-w-5xl gap-14 px-5 lg:grid-cols-[0.75fr_1.25fr] lg:px-8">
 			<div>
@@ -561,7 +651,8 @@
 					</button>
 					<div class="faq-content pb-6">
 						<p class="text-sm leading-relaxed text-slate-300/70">
-							Sim. Atendemos clientes em todo o Brasil por WhatsApp, videochamada e telefone, com o mesmo cuidado e segurança do atendimento presencial em Florianópolis.
+							Sim. Atendemos clientes em todo o Brasil por WhatsApp, videochamada e telefone, com o mesmo
+							cuidado e segurança do atendimento presencial.
 						</p>
 					</div>
 				</div>
@@ -578,7 +669,8 @@
 					</button>
 					<div class="faq-content hidden pb-6">
 						<p class="text-sm leading-relaxed text-slate-300/70">
-							O prazo varia conforme a modalidade do benefício e a fila do INSS. Após analisar seus documentos, detalhamos os prazos esperados para o meio administrativo ou judicial.
+							O prazo varia conforme a modalidade do benefício e a fila do INSS. Após analisar seus
+							documentos, detalhamos os prazos esperados para o meio administrativo ou judicial.
 						</p>
 					</div>
 				</div>
@@ -595,7 +687,9 @@
 					</button>
 					<div class="faq-content hidden pb-6">
 						<p class="text-sm leading-relaxed text-slate-300/70">
-							Com certeza. O indeferimento administrativo não encerra o seu direito. Avaliamos a fundamentação da negativa e entramos com o recurso cabível ou ação judicial perante a Justiça Federal.
+							Com certeza. O indeferimento administrativo não encerra o seu direito. Avaliamos a
+							fundamentação da negativa e entramos com o recurso cabível ou ação judicial perante a
+							Justiça Federal.
 						</p>
 					</div>
 				</div>
@@ -612,7 +706,8 @@
 					</button>
 					<div class="faq-content hidden pb-6">
 						<p class="text-sm leading-relaxed text-slate-300/70">
-							Inicialmente, documento de identidade (RG/CPF), comprovante de residência, carteiras de trabalho (CTPS) e o extrato CNIS (obtido facilmente no aplicativo Meu INSS).
+							Inicialmente, documento de identidade (RG/CPF), comprovante de residência, carteiras de
+							trabalho (CTPS) e o extrato CNIS (obtido facilmente no aplicativo Meu INSS).
 						</p>
 					</div>
 				</div>
@@ -621,52 +716,64 @@
 	</section>
 
 	<!-- Call to Action Banner Luxuoso -->
-	<section class="relative bg-[#15152a] py-20 text-white overflow-hidden border-t border-white/5">
-		<div class="mx-auto max-w-7xl px-5 lg:px-8">
-			<div class="relative overflow-hidden rounded-3xl border border-[#ac8754]/30 bg-gradient-to-r from-[#141428] via-[#1a1a32] to-[#141428] p-10 lg:p-16 shadow-2xl">
-				<!-- Iluminação Interna do Banner -->
-				<div class="absolute -right-16 -top-16 size-80 rounded-full bg-[#ac8754]/20 blur-[120px] pointer-events-none"></div>
-				<div class="absolute -left-16 -bottom-16 size-80 rounded-full bg-[#ac8754]/10 blur-[120px] pointer-events-none"></div>
+	<section class="relative bg-[#15152a] py-20 lg:p-20 text-white overflow-hidden border-t border-white/5">
+		<div
+			class="relative overflow-hidden rounded-3xl border border-[#ac8754]/30 bg-gradient-to-r from-[#141428] via-[#1a1a32] to-[#141428] px-8 py-12 lg:p-20 shadow-2xl">
+			<!-- Iluminação Interna -->
+			<div
+				class="absolute -right-16 -top-16 size-80 rounded-full bg-[#ac8754]/20 blur-[120px] pointer-events-none z-0">
+			</div>
+			<div
+				class="absolute -left-16 -bottom-16 size-80 rounded-full bg-[#ac8754]/10 blur-[120px] pointer-events-none z-0">
+			</div>
 
-				<div
-					class="relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
-					<div>
-						<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Vamos conversar</p>
-						<h2 class="mt-4 max-w-2xl font-serif text-4xl leading-tight sm:text-5xl text-white">
-							Seu direito merece ser tratado com <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] via-amber-100 to-[#8e6c3e]">seriedade e cuidado.</span>
-						</h2>
-					</div>
+			<!-- Grid de Alinhamento (1/2 Texto, 1/4 Botão, 1/4 Imagem) -->
+			<div class="relative z-20 grid gap-8 lg:grid-cols-4 lg:gap-0 items-center text-center lg:text-left">
+
+				<!-- 1/2 (50%): Texto com espaço responsivo -->
+				<div class="lg:col-span-2 flex flex-col items-center lg:items-start lg:pr-10">
+					<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Vamos conversar</p>
+					<h2 class="mt-4 font-serif text-4xl leading-tight sm:text-5xl text-white">
+						Seu direito merece ser tratado com <span
+							class="text-transparent bg-clip-text bg-gradient-to-r from-[#ac8754] via-amber-100 to-[#8e6c3e]">seriedade
+							e cuidado.</span>
+					</h2>
+				</div>
+
+				<!-- 1/4 (25%): Botão -->
+				<div class="lg:col-span-1 relative z-20 flex justify-center items-center">
 					<a href="https://wa.me/5548988519275?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20benef%C3%ADcio%20previdenci%C3%A1rio."
 						target="_blank" rel="noreferrer"
-						class="inline-flex items-center justify-center gap-3 rounded-full bg-[#ac8754] px-8 py-4 text-sm font-semibold text-[#1a1a32] shadow-xl shadow-[#ac8754]/25 ring-1 ring-white/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#8e6c3e] hover:text-white hover:shadow-2xl hover:shadow-[#ac8754]/30">
+						class="shrink-0 inline-flex items-center justify-center gap-3 rounded-full bg-[#ac8754] px-8 py-4 text-sm font-semibold text-[#1a1a32] shadow-xl shadow-[#ac8754]/25 ring-1 ring-white/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#8e6c3e] hover:text-white hover:shadow-2xl hover:shadow-[#ac8754]/30">
 						Começar atendimento
-						<svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M14 5l7 7m0 0l-7 7m7-7H3" />
-						</svg>
 					</a>
 				</div>
+
+				<!-- 1/4 (25%): Contêiner e imagem ocultos em telas menores que 1024px -->
+				<div class="hidden lg:flex lg:col-span-1 relative z-10 items-center min-h-[200px]">
+					<img src="../assets/images/aqui_palma_mao.png" alt="Dra. Karen Dias Lanfranca Maida"
+						class="absolute -left-40 top-1/2 -translate-y-1/2 mt-28 z-10 max-w-none h-[430px] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] pointer-events-none" />
+				</div>
+
 			</div>
 		</div>
 	</section>
 
 	<!-- Footer -->
 	<footer class="bg-[#121224] text-slate-400/80 border-t border-white/10">
-		<div class="mx-auto grid max-w-7xl gap-12 border-b border-white/10 px-5 py-14 lg:grid-cols-3 lg:px-8">
-			<div>
-				<div class="flex items-center gap-3">
-					<span class="flex size-9 items-center justify-center rounded-full bg-[#ac8754] text-[#1a1a32] font-semibold">
-						<svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M12 3v18m-9-6h18M5 9l7-6 7 6M5 15l7 6 7-6" />
-						</svg>
-					</span>
-					<span class="font-serif text-xl text-white">Maida Advocacia</span>
+		<div
+			class="mx-auto grid max-w-7xl gap-12 border-b border-white/10 px-5 py-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-8">
+
+			<!-- Coluna 1: Logo, Descrição e Redes Sociais -->
+			<div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+				<div class="flex items-center">
+					<img src="../assets/images/logo-maida-sem-fundo.png" alt="Maida Advocacia"
+						class="h-20 lg:h-24 w-auto object-contain" />
 				</div>
 				<p class="mt-5 max-w-xs text-sm leading-relaxed text-slate-400">
 					Direito Previdenciário com tradição, escuta atenta e estratégia jurídica segura.
 				</p>
-				<div class="mt-6 flex gap-3">
+				<div class="mt-6 flex gap-3 justify-center sm:justify-start">
 					<a href="https://www.instagram.com/maidaadvocaciaoficial/" target="_blank" aria-label="Instagram"
 						class="rounded-full border border-white/10 bg-white/[0.03] p-2.5 text-slate-300 transition-all hover:border-[#ac8754]/50 hover:bg-[#ac8754]/10 hover:text-[#ac8754]">
 						<svg class="size-4" fill="currentColor" viewBox="0 0 24 24">
@@ -683,26 +790,32 @@
 					</a>
 				</div>
 			</div>
-			<div>
+
+			<!-- Coluna 2: Localização e Horário -->
+			<div class="flex flex-col items-center sm:items-start text-center sm:text-left">
 				<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Onde estamos</p>
-				<div class="mt-5 flex gap-3 text-sm">
+				<div class="mt-5 flex flex-col sm:flex-row items-center sm:items-start gap-3 text-sm">
 					<svg class="size-4 shrink-0 text-[#ac8754]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 					</svg>
-					<span class="text-slate-300">Florianópolis · Santa Catarina<br /><span class="text-slate-400/80">Atendimento presencial e online em todo o Brasil</span></span>
+					<span class="text-slate-300">Florianópolis · Santa Catarina<br /><span
+							class="text-slate-400/80">Atendimento presencial e online em todo o Brasil</span></span>
 				</div>
-				<div class="mt-4 flex gap-3 text-sm">
+				<div class="mt-4 flex flex-col sm:flex-row items-center sm:items-start gap-3 text-sm">
 					<svg class="size-4 shrink-0 text-[#ac8754]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
 					</svg>
-					<span class="text-slate-300">Segunda a Sexta<br /><span class="text-slate-400/80">08h às 18h</span></span>
+					<span class="text-slate-300">Segunda a Sexta<br /><span class="text-slate-400/80">08h às
+							18h</span></span>
 				</div>
 			</div>
-			<div>
+
+			<!-- Coluna 3: Contato Direto e Registros -->
+			<div class="flex flex-col items-center sm:items-start text-center sm:text-left sm:col-span-2 lg:col-span-1">
 				<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Contato direto</p>
 				<a href="https://wa.me/5548988519275?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20benef%C3%ADcio%20previdenci%C3%A1rio."
 					target="_blank" rel="noreferrer"
@@ -719,8 +832,10 @@
 				</p>
 			</div>
 		</div>
+
+		<!-- Faixa Inferior de Copyright -->
 		<div
-			class="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-5 py-6 text-xs text-slate-500 sm:flex-row lg:px-8">
+			class="mx-auto flex max-w-7xl flex-col sm:flex-row items-center justify-between gap-3 px-5 py-6 text-xs text-slate-500 text-center sm:text-left lg:px-8">
 			<p>© 2026 Maida Advocacia. Todos os direitos reservados.</p>
 			<p>Florianópolis - SC</p>
 		</div>
