@@ -2,6 +2,28 @@
 <html lang="pt-BR" class="scroll-smooth">
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451140052"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'AW-18451140052');
+	</script>
+
+	<!-- Open Graph / WhatsApp / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://maida.com.br/previdenciario/" />
+	<meta property="og:title" content="Maida Advocacia | Direito Previdenciário" />
+	<meta property="og:description"
+		content="Advocacia previdenciária com experiência, escuta e estratégia. Atendimento presencial em Florianópolis e online em todo o Brasil." />
+	<meta property="og:image" content="https://maida.com.br/assets/images/og-image.jpg" />
+
+	<!-- Canonical Link -->
+	<link rel="canonical" href="https://maida.com.br/previdenciario/" />
+
+	<!-- Page Info -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Maida Advocacia | Direito Previdenciário</title>
@@ -42,6 +64,51 @@
 		::-webkit-scrollbar-thumb:hover {
 			background: #ac8754;
 		}
+
+		/* Estado inicial invisível e levemente deslocado para baixo */
+		.fade-up {
+			opacity: 0;
+			transform: translateY(20px);
+			transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+		}
+
+		/* Classe adicionada via JavaScript quando o elemento entra na tela */
+		.fade-up.visivel {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		/* Animação de chacoalhar discreto (Ciclo de 5s, chacoalhada aos 15%) */
+		@keyframes chacoalhar-discreto {
+
+			0%,
+			15%,
+			29%,
+			100% {
+				transform: rotate(0deg) scale(1);
+			}
+
+			17.8% {
+				transform: rotate(-3deg) scale(1.02);
+			}
+
+			20.6% {
+				transform: rotate(3deg) scale(1.02);
+			}
+
+			23.4% {
+				transform: rotate(-2deg) scale(1.02);
+			}
+
+			26.2% {
+				transform: rotate(2deg) scale(1.02);
+			}
+		}
+
+		.botao-chacoalhar {
+			animation: chacoalhar-discreto 5s infinite ease-in-out;
+			will-change: transform;
+		}
 	</style>
 </head>
 
@@ -75,7 +142,7 @@
 			<div class="hidden lg:block">
 				<a href="https://wa.me/5548988519275?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20benef%C3%ADcio%20previdenci%C3%A1rio."
 					target="_blank" rel="noreferrer"
-					class="inline-flex items-center gap-2 rounded-full bg-[#ac8754] px-5 py-2.5 text-xs font-semibold text-[#1a1a32] ring-1 ring-white/20 shadow-md shadow-[#ac8754]/15 transition-all hover:bg-[#8e6c3e] hover:text-white hover:shadow-lg hover:shadow-[#ac8754]/25 hover:-translate-y-0.5">
+					class="botao-chacoalhar inline-flex items-center gap-2 rounded-full bg-[#ac8754] px-5 py-2.5 text-xs font-semibold text-[#1a1a32] ring-1 ring-white/20 shadow-md shadow-[#ac8754]/15 transition-all hover:bg-[#8e6c3e] hover:text-white hover:shadow-lg hover:shadow-[#ac8754]/25 hover:-translate-y-0.5">
 					<svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -123,7 +190,7 @@
 			class="hidden lg:block absolute top-10 left-1/4 -translate-x-1/2 w-[600px] h-[500px] bg-[#ac8754]/12 blur-[140px] rounded-full pointer-events-none -z-10">
 		</div>
 		<div
-			class="hidden lg:blockabsolute top-1/4 right-5 w-[500px] h-[500px] bg-[#ac8754]/15 blur-[130px] rounded-full pointer-events-none -z-10">
+			class="hidden lg:block absolute top-1/4 right-5 w-[500px] h-[500px] bg-[#ac8754]/15 blur-[130px] rounded-full pointer-events-none -z-10">
 		</div>
 
 		<div
@@ -249,7 +316,7 @@
 	</section>
 
 	<!-- Áreas de Atuação (Glassmorphism & Micro-bordas) -->
-	<section id="atuacao" class="relative bg-[#15152a] py-24 lg:py-32 overflow-hidden border-t border-white/5">
+	<section id="atuacao" class="fade-up relative bg-[#15152a] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Iluminação Radial Dourada na Seção -->
 		<div
 			class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#ac8754]/6 blur-[160px] rounded-full pointer-events-none -z-10">
@@ -428,7 +495,8 @@
 	</section>
 
 	<!-- O Escritório / Legado -->
-	<section id="escritorio" class="relative bg-[#1a1a32] py-24 lg:py-32 overflow-hidden border-t border-white/5">
+	<section id="escritorio"
+		class="fade-up relative bg-[#1a1a32] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Ponto de luz radial dourada -->
 		<div
 			class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ac8754]/8 blur-[160px] rounded-full pointer-events-none -z-10">
@@ -537,7 +605,8 @@
 	</section>
 
 	<!-- Como Funciona (Painéis de Vidro Dark) -->
-	<section id="como-funciona" class="relative bg-[#15152a] py-24 lg:py-32 overflow-hidden border-t border-white/5">
+	<section id="como-funciona"
+		class="fade-up relative bg-[#15152a] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Ponto de luz radial -->
 		<div
 			class="absolute top-1/3 right-1/4 w-[600px] h-[500px] bg-[#ac8754]/6 blur-[160px] rounded-full pointer-events-none -z-10">
@@ -615,7 +684,7 @@
 	</section>
 
 	<!-- FAQ Accordion -->
-	<section id="duvidas" class="relative bg-[#1a1a32] py-24 lg:py-32 overflow-hidden border-t border-white/5">
+	<section id="duvidas" class="fade-up relative bg-[#1a1a32] py-24 lg:py-32 overflow-hidden border-t border-white/5">
 		<!-- Ponto de luz radial -->
 		<div
 			class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#ac8754]/7 blur-[150px] rounded-full pointer-events-none -z-10">
@@ -717,7 +786,7 @@
 	</section>
 
 	<!-- Call to Action Banner Luxuoso -->
-	<section class="relative bg-[#15152a] py-20 lg:p-20 text-white overflow-hidden border-t border-white/5">
+	<section class="fade-up relative bg-[#15152a] py-20 lg:p-20 text-white overflow-hidden border-t border-white/5">
 		<div
 			class="relative overflow-hidden rounded-3xl border border-[#ac8754]/30 bg-gradient-to-r from-[#141428] via-[#1a1a32] to-[#141428] px-8 py-12 lg:p-20 shadow-2xl">
 			<!-- Iluminação Interna -->
@@ -762,88 +831,113 @@
 
 	<!-- Footer -->
 	<footer class="bg-[#121224] text-slate-400/80 border-t border-white/10">
-		<div
-			class="mx-auto grid max-w-7xl gap-12 border-b border-white/10 px-5 py-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-8">
+		<div class="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+			<div
+				class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-12 border-b border-white/10 pb-12">
 
-			<!-- Coluna 1: Logo, Descrição e Redes Sociais -->
-			<div class="flex flex-col items-center sm:items-start text-center sm:text-left">
-				<div class="flex items-center">
-					<img src="../assets/images/logo-maida-sem-fundo.png" alt="Maida Advocacia"
-						class="h-20 lg:h-24 w-auto object-contain" />
-				</div>
-				<p class="mt-5 max-w-xs text-sm leading-relaxed text-slate-400">
-					Direito Previdenciário com tradição, escuta atenta e estratégia jurídica segura.
-				</p>
-				<div class="mt-6 flex gap-3 justify-center sm:justify-start">
-					<a href="https://www.instagram.com/maidaadvocaciaoficial/" target="_blank" aria-label="Instagram"
-						class="rounded-full border border-white/10 bg-white/[0.03] p-2.5 text-slate-300 transition-all hover:border-[#ac8754]/50 hover:bg-[#ac8754]/10 hover:text-[#ac8754]">
-						<svg class="size-4" fill="currentColor" viewBox="0 0 24 24">
-							<path
-								d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-						</svg>
+				<!-- Coluna 1: Logo & Sobre (5 colunas) -->
+				<div class="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-5">
+					<a href="#inicio" aria-label="Ir para o início">
+						<img src="../assets/images/logo-maida-sem-fundo.png" alt="Maida Advocacia"
+							class="h-20 lg:h-24 w-auto object-contain" />
 					</a>
-					<a href="https://www.linkedin.com/company/maidaadvocacia" target="_blank" aria-label="LinkedIn"
-						class="rounded-full border border-white/10 bg-white/[0.03] p-2.5 text-slate-300 transition-all hover:border-[#ac8754]/50 hover:bg-[#ac8754]/10 hover:text-[#ac8754]">
-						<svg class="size-4" fill="currentColor" viewBox="0 0 24 24">
-							<path
-								d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+					<p class="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
+						Direito Previdenciário com tradição, escuta atenta e estratégia jurídica segura.
+					</p>
+					<div class="mt-6 flex gap-3">
+						<a href="https://www.instagram.com/maidaadvocaciaoficial/" target="_blank"
+							rel="noopener noreferrer" aria-label="Instagram"
+							class="rounded-full border border-white/10 bg-white/[0.03] p-2.5 text-slate-300 transition-all hover:border-[#ac8754]/50 hover:bg-[#ac8754]/10 hover:text-[#ac8754]">
+							<svg class="size-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+							</svg>
+						</a>
+						<a href="https://www.linkedin.com/company/maidaadvocacia" target="_blank"
+							rel="noopener noreferrer" aria-label="LinkedIn"
+							class="rounded-full border border-white/10 bg-white/[0.03] p-2.5 text-slate-300 transition-all hover:border-[#ac8754]/50 hover:bg-[#ac8754]/10 hover:text-[#ac8754]">
+							<svg class="size-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+								<path
+									d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- Coluna 2: Localização e Horário (4 colunas) -->
+				<div class="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-4">
+					<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Onde estamos</p>
+					<div class="mt-4 flex items-start gap-3 text-sm text-slate-300">
+						<svg class="size-4 shrink-0 mt-0.5 text-[#ac8754]" fill="none" stroke="currentColor"
+							viewBox="0 0 24 24" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 						</svg>
+						<div>
+							<span>Florianópolis · Santa Catarina</span>
+							<p class="mt-0.5 text-xs text-slate-400/80">Atendimento presencial e online em todo o Brasil
+							</p>
+						</div>
+					</div>
+					<div class="mt-4 flex items-start gap-3 text-sm text-slate-300">
+						<svg class="size-4 shrink-0 mt-0.5 text-[#ac8754]" fill="none" stroke="currentColor"
+							viewBox="0 0 24 24" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg>
+						<div>
+							<span>Segunda a Sexta</span>
+							<p class="mt-0.5 text-xs text-slate-400/80">08h às 18h</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Coluna 3: Contato Direto & Registros (3 colunas) -->
+				<div class="flex flex-col items-center md:items-start text-center md:text-left lg:col-span-3">
+					<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Contato direto</p>
+					<a href="https://wa.me/5548988519275?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20benef%C3%ADcio%20previdenci%C3%A1rio."
+						target="_blank" rel="noopener noreferrer"
+						class="mt-4 inline-flex items-center gap-2.5 text-sm font-medium text-slate-200 transition-colors hover:text-[#ac8754]">
+						<svg class="size-4 text-[#ac8754]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+							aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1.01 1.01 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+						</svg>
+						(48) 98851-9275
 					</a>
+					<p class="mt-4 text-xs leading-relaxed text-slate-400/80">
+						Inscrições na Ordem dos Advogados:<br />
+						<strong class="font-medium text-slate-300">OAB/SC 77.387A · OAB/SP 173.891</strong>
+					</p>
 				</div>
+
 			</div>
 
-			<!-- Coluna 2: Localização e Horário -->
-			<div class="flex flex-col items-center sm:items-start text-center sm:text-left">
-				<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Onde estamos</p>
-				<div class="mt-5 flex flex-col sm:flex-row items-center sm:items-start gap-3 text-sm">
-					<svg class="size-4 shrink-0 text-[#ac8754]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-					</svg>
-					<span class="text-slate-300">Florianópolis · Santa Catarina<br /><span
-							class="text-slate-400/80">Atendimento presencial e online em todo o Brasil</span></span>
-				</div>
-				<div class="mt-4 flex flex-col sm:flex-row items-center sm:items-start gap-3 text-sm">
-					<svg class="size-4 shrink-0 text-[#ac8754]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-					</svg>
-					<span class="text-slate-300">Segunda a Sexta<br /><span class="text-slate-400/80">08h às
-							18h</span></span>
-				</div>
+			<!-- Faixa Inferior de Copyright -->
+			<div
+				class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 text-xs text-slate-500 text-center sm:text-left">
+				<p>© 2026 Maida Advocacia. Todos os direitos reservados.</p>
+				<p>Florianópolis - SC</p>
 			</div>
-
-			<!-- Coluna 3: Contato Direto e Registros -->
-			<div class="flex flex-col items-center sm:items-start text-center sm:text-left sm:col-span-2 lg:col-span-1">
-				<p class="font-mono text-[10px] uppercase tracking-[0.25em] text-[#ac8754]">Contato direto</p>
-				<a href="https://wa.me/5548988519275?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20benef%C3%ADcio%20previdenci%C3%A1rio."
-					target="_blank" rel="noreferrer"
-					class="mt-5 flex items-center gap-3 text-sm text-slate-200 hover:text-[#ac8754] transition-colors">
-					<svg class="size-4 text-[#ac8754]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1.01 1.01 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-					</svg>
-					(48) 98851-9275
-				</a>
-				<p class="mt-5 text-xs leading-relaxed text-slate-400/80">
-					Inscrições na Ordem dos Advogados:<br />
-					OAB/SC 77.387A · OAB/SP 173.891
-				</p>
-			</div>
-		</div>
-
-		<!-- Faixa Inferior de Copyright -->
-		<div
-			class="mx-auto flex max-w-7xl flex-col sm:flex-row items-center justify-between gap-3 px-5 py-6 text-xs text-slate-500 text-center sm:text-left lg:px-8">
-			<p>© 2026 Maida Advocacia. Todos os direitos reservados.</p>
-			<p>Florianópolis - SC</p>
 		</div>
 	</footer>
 
 	<!-- Scripts Vanilla JS -->
 	<script>
+		/* Observador para disparar a animação apenas uma vez */
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visivel');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.25 }); // Dispara quando 15% do elemento estiver visível
+
+		document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+
 		// Menu Mobile Toggle
 		const menuToggle = document.getElementById('menu-toggle');
 		const mobileMenu = document.getElementById('mobile-menu');
